@@ -1,4 +1,3 @@
-
 const addBtn = document.querySelector('#add-btn');
 let books = JSON.parse(localStorage.getItem('books'));
 
