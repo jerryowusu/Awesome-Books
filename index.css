@@ -70,23 +70,23 @@ header .container {
   align-items: center;
 }
 
-section.bk-sect {
+.bk-sect {
   padding: 24px;
 }
 
-section.bk-form form {
+.bk-form form {
   padding: 24px 0;
   gap: 12px;
   width: 100%;
 }
 
-section.bk-sect h1,
-section.bk-form h2 {
+.bk-sect h2,
+.bk-form h2 {
   text-align: center;
   font-weight: 500;
 }
 
-section.bk-form form input {
+.bk-form form input {
   outline: none;
   width: 98%;
   height: 32px;
@@ -98,11 +98,11 @@ section.bk-form form input {
   border: 2px solid black;
 }
 
-section.main-book ul {
+.main-book ul {
   margin: 32px 0;
 }
 
-section.main-book ul li {
+.main-book ul li {
   padding: 0 8px;
   height: 48px;
   width: 100%;
@@ -110,12 +110,12 @@ section.main-book ul li {
   justify-content: space-between;
 }
 
-section.main-book ul li div h2 {
+.main-book ul li div h2 {
   font-size: 14px;
   align-self: flex-start;
 }
 
-section.main-book ul li div {
+.main-book ul li div {
   display: flex;
   align-self: flex-start;
   margin: auto 0;
@@ -124,8 +124,8 @@ section.main-book ul li div {
   flex-wrap: wrap;
 }
 
-section.bk-form form button,
-section.main-book ul li button {
+.bk-form form button,
+.main-book ul li button {
   box-shadow: 0.17em 0.17em;
   border: 2px solid black;
   padding: 8px;
@@ -133,7 +133,7 @@ section.main-book ul li button {
   font-weight: bold;
 }
 
-section.main-book ul li button {
+.main-book ul li button {
   margin: auto 0;
 }
 
@@ -161,11 +161,11 @@ footer p {
   background-color: white;
 }
 
-section.contact-sect p {
+.contact-sect p {
   margin: 20px auto;
 }
 
-section.contact-sect ul li {
+.contact-sect ul li {
   align-self: flex-start;
   margin: 0 24px;
   list-style: disc;
@@ -176,7 +176,7 @@ header .container nav ul li {
   padding: 5px;
 }
 
-section.main-book ul li:nth-child(odd) {
+.main-book ul li:nth-child(odd) {
   background-color: rgba(128, 128, 128, 0.5);
 }
 
@@ -191,11 +191,11 @@ footer p a {
 }
 
 @media screen and (min-width: 768px) {
-  section.bk-sect {
+  .bk-sect {
     padding: 4% 10%;
   }
 
-  section.main-book ul {
+  .main-book ul {
     max-width: 600px;
     margin: 32px auto;
   }
@@ -205,12 +205,12 @@ footer p a {
     padding-bottom: 8%;
   }
 
-  section.bk-form form {
+  .bk-form form {
     max-width: 300px;
     margin: 0 auto;
   }
 
-  section.contact-sect p {
+  .contact-sect p {
     max-width: 444px;
     text-align: left;
     margin: 40px auto;
