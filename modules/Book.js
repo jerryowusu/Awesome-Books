@@ -9,29 +9,29 @@ export default class Book {
     this.author = author;
   }
 
-  addBook() {
-    const { id, title, author } = this;
-    const bookObj = { id, title, author };
-    books = JSON.parse(localStorage.getItem('books'));
-    if (title === '' || author === '') {
-      printErrorMsg('Please fill in all the fields');
-    } else if (books !== null) {
-      books.push(bookObj);
-      localStorage.setItem('books', JSON.stringify(books));
-      books = JSON.parse(localStorage.getItem('books'));
-      document.getElementById('title').value = '';
-      document.getElementById('author').value = '';
-    } else {
-      books = [];
-      books.push(bookObj);
-      localStorage.setItem('books', JSON.stringify(books));
-      books = JSON.parse(localStorage.getItem('books'));
-      document.getElementById('title').value = '';
-      document.getElementById('author').value = '';
-    }
-  }
+ addBook = () => {
+   const { id, title, author } = this;
+   const bookObj = { id, title, author };
+   books = JSON.parse(localStorage.getItem('books'));
+   if (title === '' || author === '') {
+     printErrorMsg('Please fill in all the fields');
+   } else if (books !== null) {
+     books.push(bookObj);
+     localStorage.setItem('books', JSON.stringify(books));
+     books = JSON.parse(localStorage.getItem('books'));
+     document.getElementById('title').value = '';
+     document.getElementById('author').value = '';
+   } else {
+     books = [];
+     books.push(bookObj);
+     localStorage.setItem('books', JSON.stringify(books));
+     books = JSON.parse(localStorage.getItem('books'));
+     document.getElementById('title').value = '';
+     document.getElementById('author').value = '';
+   }
+ };
 
-  removeBook() {
+  removeBook = () => {
     const { id } = this;
     books = books.filter((book) => {
       if (book.id !== id) {
@@ -43,7 +43,7 @@ export default class Book {
   }
 }
 
-export function displayBook(id, title, author) {
+export const displayBook = (id, title, author) => {
   const bookList = document.querySelector('#book-list');
   bookList.classList.add('border');
   const li = document.createElement('li');
@@ -67,4 +67,4 @@ export function displayBook(id, title, author) {
       li.remove();
     }
   });
-}
+};

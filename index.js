@@ -1,5 +1,5 @@
 import Book, { displayBook } from './modules/Book.js';
-import seeBooks, { addToBooks, linkToContacts } from './modules/eventListeners.js';
+import { seeBooks, addToBooks, linkToContacts } from './modules/eventListeners.js';
 import { DateTime } from './modules/luxon.js';
 
 const addBtn = document.querySelector('#add-btn');
