@@ -6,7 +6,7 @@ A project to create a website for books library. I started with plain javascript
 
 ## Live Link
 
-[Awesome Books](https://jerryowusu.github.io/Awesome-Books)
+[Live preview](https://jerryowusu.github.io/Awesome-Books)
 
 ## Built With!
 
