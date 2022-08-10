@@ -11,6 +11,8 @@ body {
   font-weight: normal;
   font-family: 'Balsamiq Sans', cursive;
   font-style: normal;
+  background: lightgreen url('books.jpg') no-repeat center fixed;
+  background-size: cover;
 }
 
 ul,
