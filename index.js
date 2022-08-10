@@ -37,7 +37,7 @@ contactLink.addEventListener('click', linkToContacts);
 const timer = () => {
   const today = DateTime.now();
   const date = document.getElementById('date');
-  date.innerText = `${today.toLocaleString(DateTime.DATETIME_FULL)}`;
+  date.innerText = `${today.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS)}`;
 };
 
 timer();
